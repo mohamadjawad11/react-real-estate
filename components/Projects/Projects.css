@@ -1,0 +1,144 @@
+.projects {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 130px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.slider li {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  height: auto; /* Adjusted for responsiveness */
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 0 0 calc(33.333% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.button-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: gray;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  transition: background 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.button-arrow:hover {
+  background-color: #ada9a9;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.button-arrow img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .slider li {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+     
+  }
+
+  .card-container {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 20px; /* Add space between stacked cards */
+  }
+
+  .project-card {
+     
+      margin-bottom: 20px; /* Add space between cards */
+  }
+
+  .button-arrow {
+      display: none; /* Hide arrows on smaller screens */
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .project-card img {
+      height: 200px; /* Adjust image height for smaller screens */
+  }
+
+  .card-content h2 {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  .card-content p {
+      font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+}

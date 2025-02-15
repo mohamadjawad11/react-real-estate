@@ -1,0 +1,171 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    margin-right: 35px;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+
+.about p {
+    text-align: center; /* Center the text */
+    font-size: 16px;
+}
+
+.left-column img {
+    width: 390px;
+    height: 424px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 13px;
+    padding: 7px;
+    margin-top: 10px;
+    text-align: center; /* Center text in the right column */
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center the experience items */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.experience-content h2 {
+    font-size: 40px;
+    text-align: center; /* Center the h2 text */
+}
+
+.experience-content p {
+    font-size: 18px;
+    text-align: center; /* Center the p text */
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 5px;
+}
+
+.right-column p {
+    max-width: 400px;
+    margin: auto; /* Center the paragraph */
+    order: 2;
+    font-weight: 600;
+}
+
+.learn-more-btn {
+    background: #007bff;
+    color: #f5f5f5;
+    padding: 14px 35px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    margin: 20px;
+    order: 3;
+}
+
+.learn-more-btn:hover {
+    background: #216ec1;
+    transform: scale(1.05);
+}
+
+.learn-more-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(0, 91, 191, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+
+
+    .left-column img {
+        width: 300px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .right-column {
+        align-items: center; /* Ensure items stay centered */
+    }
+
+    .right-column p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 50px auto;
+        margin-right: 20px;
+        margin-bottom: 80px;
+    }
+
+    .experience {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-content h2 {
+        font-size: 35px;
+    }
+
+    .experience-content p {
+        font-size: 16px;
+    }
+
+    .right-column p {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin: 30px auto;
+        margin-right: 10px;
+        margin-bottom: 60px;
+    }
+
+    .experience-content h2 {
+        font-size: 30px;
+    }
+
+    .experience-content p {
+        font-size: 14px;
+    }
+
+    .right-column p {
+        font-size: 12px;
+    }
+
+    .learn-more-btn {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}

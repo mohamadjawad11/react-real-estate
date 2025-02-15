@@ -1,0 +1,165 @@
+/* Default styles */
+nav {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  background-color: #121928;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.estate-logo {
+  width: 230px;
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-container li a {
+  font-family: 'Playfair Display', 'Merriweather', 'Cormorant Garamond', serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.without-last li a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.list-container li a:hover {
+  color: rgb(65, 65, 65);
+}
+
+.list-container li a:last-child {
+  margin-left: 20px;
+}
+
+.without-last {
+  display: flex;
+  align-items: center;
+  margin-right: 180px;
+  padding: 5px 30px;
+}
+
+.dark-nav {
+  background-color: #303ebe;
+  transition: 0.5s;
+}
+
+.button-dark {
+  background-color: #f5f5f5;
+  color: black;
+  border: 1px solid #3c4eec;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.button-dark:hover {
+  background-color: #4321a2;
+  color: white;
+}
+
+.button-dark:active {
+  background-color: #291bc4;
+}
+
+
+@media (max-width: 1000px) {
+  nav {
+    justify-content: space-between; 
+    padding: 10px;
+  }
+
+  .estate-logo {
+    width: 200px; 
+  }
+
+  .without-last {
+    margin-right: 50px; 
+  }
+
+  .list-container li a {
+    font-size: 18px; 
+    padding: 8px 12px;
+  }
+  .btn{
+    padding: 5px 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; 
+    padding: 10px 5px;
+  }
+
+  .estate-logo {
+    width: 180px; 
+    margin-bottom: 10px; 
+  }
+
+  nav ul {
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .without-last {
+    margin-right: 0; 
+    padding: 5;
+    flex-direction: column; 
+  }
+
+  .list-container li a {
+    margin-bottom: 10px; 
+    font-size: 25px; 
+    padding: 5px;
+    
+  }
+
+  .button-dark {
+    margin-top: 10px; 
+  }
+  .btn{
+    padding: 15px 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .estate-logo {
+    width: 150px; 
+  }
+
+  .list-container li a {
+    font-size: 14px; 
+    padding: 12px 15px;
+  }
+
+  .button-dark {
+    padding: 8px 20px; 
+    font-size: 14px;
+  }
+}

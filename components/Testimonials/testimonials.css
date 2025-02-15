@@ -1,0 +1,135 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  margin-bottom: 140px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 340px;
+  height: 408px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-title {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonial-text {
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn-testimonial {
+  background: #007bff;
+  color: #f5f5f5;
+  padding: 14px 35px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 20px;
+}
+
+.btn-testimonial:hover {
+  background: #185290;
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .testimonials {
+      gap: 20px; /* Reduce gap between cards */
+  }
+
+  .testimonial-card {
+      width: 300px; /* Slightly reduce card width */
+      height: auto; /* Allow height to adjust */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 20px; /* Add space between stacked cards */
+  }
+
+  .testimonial-card {
+      width: 80%; /* Cards take 80% of the container width */
+      height: auto; /* Allow height to adjust */
+  }
+
+  .testimonial-image {
+      width: 80px; /* Reduce image size */
+      height: 80px;
+  }
+
+  .btn-testimonial {
+      padding: 12px 30px; /* Adjust button padding */
+      font-size: 14px; /* Reduce button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+      width: 90%; /* Cards take 90% of the container width */
+  }
+
+  .testimonial-image {
+      width: 70px; /* Further reduce image size */
+      height: 70px;
+  }
+
+  .testimonial-text {
+      font-size: 14px; /* Reduce text size for smaller screens */
+  }
+
+  .btn-testimonial {
+      padding: 10px 25px; /* Further adjust button padding */
+      font-size: 12px; /* Further reduce button font size */
+  }
+}

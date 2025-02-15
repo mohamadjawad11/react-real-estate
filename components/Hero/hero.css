@@ -1,0 +1,144 @@
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8, 0, 58, 0.05), rgba(8, 0, 58, 0.05)),
+        url(../../assets/header_img.png) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 750px;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 80px;
+    text-align: center; /* Center text for smaller screens */
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+}
+
+.btn-projects {
+    background: #f5f5f5;
+    color: black;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    margin: 20px;
+}
+
+.btn-projects:hover {
+    background: linear-gradient(135deg, #7b83a4, #3f3e41);
+    transform: scale(1.05);
+}
+
+.btn-projects:active {
+    transform: scale(0.98);
+}
+
+.btn-contact {
+    background: #007bff;
+    color: #f5f5f5;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    margin: 20px;
+}
+
+.btn-contact:hover {
+    background: #175496;
+    transform: scale(1.05);
+}
+
+.btn-contact:active {
+    transform: scale(0.98);
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', 'Merriweather', 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.hero-text h1 span {
+    margin-left: 50px;
+    font-family: 'Playfair Display', 'Merriweather', 'Cormorant Garamond', serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 60px; /* Reduce font size for tablets */
+    }
+
+    .hero-text h1 span {
+        display: block;
+        margin-right: 50px;
+        
+    }
+
+    .btn-projects,
+    .btn-contact {
+        padding: 12px 20px; /* Adjust button padding */
+        font-size: 14px; /* Reduce button font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 38px; /* Further reduce font size for smaller tablets */
+        margin-left: 0; /* Remove left margin */
+    }
+
+  
+
+    .button-section {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .btn-projects,
+    .btn-contact {
+        margin: 10px 0; /* Adjust button margins for vertical stacking */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 15px; /* Further reduce font size for mobile */
+    }
+
+    
+
+    .btn-projects,
+    .btn-contact {
+        padding: 10px 16px; /* Further adjust button padding */
+        font-size: 12px; /* Further reduce button font size */
+    }
+}
